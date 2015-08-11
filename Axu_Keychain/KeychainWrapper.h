@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface KeychainWrapper : NSObject
-@property (nonatomic, strong) NSMutableDictionary *keychainAttributes;
-@property (nonatomic, strong) NSData *keychainData;
+@property (nonatomic, strong) NSMutableDictionary *keychainAttributes;//Save the attributes of keychainItem
+@property (nonatomic, strong) NSData *keychainData;//Save the data of keychainItem
 
 - (id)initWithAttributes:(NSDictionary *)attributes;//Retrieve existed keychainItem
 - (id)initWithNewKeychain:(NSDictionary *)keychainCriteria;//Create new keychainItem

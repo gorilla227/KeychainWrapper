@@ -9,9 +9,9 @@
 #import "KeychainWrapper.h"
 
 @implementation KeychainWrapper {
-    NSData *keychainID;
-    NSMutableDictionary *queryAttributes;
-    NSMutableDictionary *queryData;
+    NSData *keychainID;//kSecAttrGeneric
+    NSMutableDictionary *queryAttributes;//Query used for retrive attributes
+    NSMutableDictionary *queryData;//Query used for retrive data
 }
 @synthesize keychainAttributes, keychainData;
 
